@@ -8,8 +8,4 @@ puts "Welcome! What's your name?"
 name = gets.chomp
 name.capitalize!
 
-if name.chr == "S"
-  puts "#{name}!".upcase
-else 
-  puts "Hi #{name}"
-end
+name.chr == "S" ? (puts name.upcase) : (puts "Hi #{name}")
